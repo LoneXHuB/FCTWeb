@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Medica template</title>
+    <meta property="og:title" content="Medica template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Poppins;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="home-container">
+        <div data-modal="practices" class="home-modal">
+          <div class="home-practices">
+            <div class="home-heading">
+              <span class="home-header">Our practices</span>
+              <svg
+                viewBox="0 0 1024 1024"
+                data-close="practices"
+                class="home-close"
+              >
+                <path
+                  d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                ></path>
+              </svg>
+            </div>
+            <div class="home-grid">
+              <div class="home-section">
+                <div class="home-heading01">
+                  <span class="home-header01">Cardiology</span>
+                  <span class="home-caption">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image"
+                  />
+                </div>
+              </div>
+              <div class="home-section1">
+                <div class="home-heading02">
+                  <span class="home-header02">Orthopedics</span>
+                  <span class="home-caption1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text01">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image01"
+                  />
+                </div>
+              </div>
+              <div class="home-section2">
+                <div class="home-heading03">
+                  <span class="home-header03">Ophtalmology</span>
+                  <span class="home-caption2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text02">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image02"
+                  />
+                </div>
+              </div>
+              <div class="home-section3">
+                <div class="home-heading04">
+                  <span class="home-header04">Pediatrics</span>
+                  <span class="home-caption3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text03">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image03"
+                  />
+                </div>
+              </div>
+              <div class="home-section4">
+                <div class="home-heading05">
+                  <span class="home-header05">Nutrition</span>
+                  <span class="home-caption4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text04">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image04"
+                  />
+                </div>
+              </div>
+              <div class="home-section5">
+                <div class="home-heading06">
+                  <span class="home-header06">General</span>
+                  <span class="home-caption5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </span>
+                </div>
+                <div class="read-more">
+                  <span class="home-text05">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image05"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="home-hero">
+          <header data-thq="thq-navbar" class="home-navbar">
+            <div class="home-left">
+              <img
+                alt="image"
+                src="static/public/playground_assets/logo-1500h.png"
+                class="home-logo"
+              />
+              <nav class="home-links">
+                <a href="#features" class="home-link">Features</a>
+                <a href="#how-it-works" class="home-link01">How it works</a>
+                <span class="home-link02">Prices</span>
+                <a href="#schedule" class="home-link03">Contact</a>
+              </nav>
+            </div>
+            <div data-thq="thq-navbar-btn-group" class="home-right">
+              <button class="home-phone button">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/phone.svg"
+                  class="home-image06"
+                />
+                <span class="home-text06">+0 123-456-789</span>
+              </button>
+              <a href="/patients" class="home-book button button-main">
+                <svg viewBox="0 0 1024 1024" class="home-icon1 arrow">
+                  <path
+                    d="M682.667 298.667v323.669l-353.835-353.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l353.835 353.835h-323.669c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h426.667c5.803 0 11.307-1.152 16.341-3.243s9.728-5.163 13.824-9.259c3.925-3.925 7.083-8.619 9.259-13.824 2.091-5.035 3.243-10.539 3.243-16.341v-426.667c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667z"
+                  ></path>
+                </svg>
+                <span class="home-text07">
+                  <span>Login</span>
+                  <br />
+                </span>
+              </a>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon3">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <div class="home-container1">
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/logo-1500h.png"
+                    class="home-image07"
+                  />
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon5">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="home-nav1"
+                >
+                  <span class="home-text10">Features</span>
+                  <span class="home-text11">How it works</span>
+                  <span class="home-text12">Prices</span>
+                  <span class="home-text13">Contact</span>
+                  <a href="#book" class="home-book1 button button-main">
+                    <img
+                      alt="image"
+                      src="static/public/playground_assets/calendar.svg"
+                      class="home-image08"
+                    />
+                    <span class="home-text14">Book an appointment</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </header>
+          <div class="home-main">
+            <div class="home-content">
+              <div class="home-heading07">
+                <h1 class="home-header07">
+                  Artificial intelligence at the patient's service.
+                </h1>
+                <p class="home-caption6">
+                  <span>
+                    Cutting-edge electroconvulsive therapy treatment
+                    incorporating the latest advancements in artificial
+                    intelligence to effectively alleviate severe symptoms of
+                    depression, yielding remarkable outcomes.
+                  </span>
+                  <br />
+                </p>
+              </div>
+              <button class="button button-main home-book2">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/calendar.svg"
+                  class="home-image09"
+                />
+                <span>Book an appointment</span>
+              </button>
+            </div>
+            <div class="home-image10">
+              <img
+                alt="image"
+                src="static/public/playground_assets/doctor-image-1500w.png"
+                class="home-image11"
+              />
+            </div>
+          </div>
+          <div id="features" class="home-features">
+            <div class="home-content01">
+              <div class="features-section quick-links">
+                <div class="features-heading">
+                  <h3 class="features-header">
+                    <span>Virtual Assistant</span>
+                  </h3>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow.svg"
+                    class="features-icon"
+                  />
+                </div>
+                <p class="features-text">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                </p>
+                <div class="features-divider"></div>
+              </div>
+              <div class="features-section quick-links">
+                <div class="features-heading">
+                  <h3 class="features-header"><span>Virtual Clinic</span></h3>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow.svg"
+                    class="features-icon"
+                  />
+                </div>
+                <p class="features-text">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                </p>
+                <div class="features-divider"></div>
+              </div>
+              <div class="features-section quick-links">
+                <div class="features-heading">
+                  <h3 class="features-header"><span>Clinical results</span></h3>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow.svg"
+                    class="features-icon"
+                  />
+                </div>
+                <p class="features-text">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                </p>
+                <div class="features-divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="home-background"></div>
+        </section>
+        <section class="home-practices1">
+          <div class="home-heading08">
+            <h2 class="home-text18">Our practices</h2>
+            <p class="home-text19">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="home-content02">
+            <div class="home-grid1">
+              <a href="index.html">
+                <div class="home-practice-wrapper">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>Cardiology</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="read-more">
+                      <span class="practice-text">Read more</span>
+                      <img
+                        alt="image"
+                        src="static/public/playground_assets/arrow-2.svg"
+                        class="practice-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="index.html">
+                <div class="home-practice-wrapper1">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>Orthopedics</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="read-more">
+                      <span class="practice-text">Read more</span>
+                      <img
+                        alt="image"
+                        src="static/public/playground_assets/arrow-2.svg"
+                        class="practice-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="index.html">
+                <div class="home-practice-wrapper2">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>Ophtalmology</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="read-more">
+                      <span class="practice-text">Read more</span>
+                      <img
+                        alt="image"
+                        src="static/public/playground_assets/arrow-2.svg"
+                        class="practice-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="index.html">
+                <div class="home-practice-wrapper3">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>Pediatrics</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="read-more">
+                      <span class="practice-text">Read more</span>
+                      <img
+                        alt="image"
+                        src="static/public/playground_assets/arrow-2.svg"
+                        class="practice-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="index.html">
+                <div class="home-practice-wrapper4">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>Nutrition</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="read-more">
+                      <span class="practice-text">Read more</span>
+                      <img
+                        alt="image"
+                        src="static/public/playground_assets/arrow-2.svg"
+                        class="practice-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="index.html">
+                <div class="home-practice-wrapper5">
+                  <div class="practice-practice">
+                    <div class="practice-heading">
+                      <h3 class="practice-header"><span>General</span></h3>
+                      <p class="practice-caption">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="read-more">
+                      <span class="practice-text">Read more</span>
+                      <img
+                        alt="image"
+                        src="static/public/playground_assets/arrow-2.svg"
+                        class="practice-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <button data-open="practices" class="button button-main">
+              <span>All practices</span>
+            </button>
+          </div>
+        </section>
+        <section id="how-it-works" class="home-why">
+          <div class="home-heading09">
+            <h2 class="home-header08">Why choose us</h2>
+            <p class="home-header09">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="home-content03">
+            <div class="home-video">
+              <video
+                src=""
+                poster="static/public/playground_assets/video-1500w.png"
+                class="home-video1"
+              ></video>
+              <div class="home-play">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/play.svg"
+                  class="home-image12"
+                />
+              </div>
+            </div>
+            <div class="home-caption7">
+              <h3 class="home-header10">
+                Consectetur adipiscing elit, sed do eiusmod tempor
+              </h3>
+              <p class="home-header11">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="home-features1">
+          <div class="home-section6">
+            <div class="home-content04">
+              <div class="home-header12">
+                <h2 class="home-heading10">
+                  Dedicated doctors with the core mission to help.
+                </h2>
+                <p class="home-capton">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+              </div>
+              <div class="read-more">
+                <span class="home-text21">See our doctors</span>
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/arrow-2.svg"
+                  class="home-image13"
+                />
+              </div>
+            </div>
+            <img
+              alt="image"
+              src="static/public/playground_assets/xray-1500w.png"
+              class="home-image14"
+            />
+          </div>
+          <div class="home-container2">
+            <img
+              alt="image"
+              src="static/public/playground_assets/lab-1500w.png"
+              class="home-image15"
+            />
+            <div class="home-section7">
+              <div class="home-content05">
+                <div class="home-header13">
+                  <h2 class="home-heading11">
+                    Get access to specialty tests and breakthrough information.
+                  </h2>
+                  <p class="home-capton1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
+                <div class="read-more">
+                  <span class="home-text22">Find test</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image16"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-section8">
+            <div class="home-content06">
+              <div class="home-header14">
+                <h2 class="home-heading12">
+                  Find out how we can help you help you.
+                </h2>
+                <p class="home-capton2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+              </div>
+              <button class="button button-main home-book3">
+                <span>Book a virtual appointment</span>
+              </button>
+            </div>
+            <img
+              alt="image"
+              src="static/public/playground_assets/examination-1500w.png"
+              class="home-image17"
+            />
+          </div>
+          <button class="home-book4 button button-main">
+            <span>Book a virtual appointment</span>
+          </button>
+        </section>
+        <section id="schedule" class="home-schedule">
+          <div class="home-content07">
+            <div class="home-header15">
+              <h2 class="home-heading13">
+                Schedule an in person or virtual appointment today
+              </h2>
+              <p class="home-caption8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+            <div class="home-types">
+              <a
+                href="#book"
+                class="home-book-person button button-main button-white"
+              >
+                <span>Book in person appointment</span>
+              </a>
+              <button class="button button-main button-white home-book-person1">
+                <span>Book virtual appointment</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <div class="home-search">
+          <div class="home-heading14">
+            <h2 class="home-text27">Search diseases &amp; conditions</h2>
+            <p class="home-text28">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="home-content08">
+            <div class="home-type-one">
+              <div class="home-alphabet">
+                <div data-letter="a" class="letter">
+                  <span class="home-text29">A</span>
+                </div>
+                <div data-letter="b" class="letter">
+                  <span class="home-text30">B</span>
+                </div>
+                <div data-letter="c" class="letter">
+                  <span class="home-text31">C</span>
+                </div>
+                <div data-letter="d" class="letter">
+                  <span class="home-text32">D</span>
+                </div>
+                <div data-letter="e" class="letter">
+                  <span class="home-text33">E</span>
+                </div>
+                <div data-letter="f" class="letter">
+                  <span class="home-text34">F</span>
+                </div>
+                <div data-letter="g" class="letter">
+                  <span class="home-text35">G</span>
+                </div>
+                <div data-letter="h" class="letter">
+                  <span class="home-text36">H</span>
+                </div>
+                <div data-letter="i" class="letter">
+                  <span class="home-text37">I</span>
+                </div>
+                <div data-letter="j" class="letter">
+                  <span class="home-text38">J</span>
+                </div>
+                <div data-letter="k" class="letter">
+                  <span class="home-text39">K</span>
+                </div>
+                <div data-letter="l" class="letter">
+                  <span class="home-text40">L</span>
+                </div>
+                <div data-letter="m" class="letter">
+                  <span class="home-text41">M</span>
+                </div>
+                <div data-letter="n" class="letter">
+                  <span class="home-text42">N</span>
+                </div>
+                <div data-letter="o" class="letter">
+                  <span class="home-text43">O</span>
+                </div>
+                <div data-letter="p" class="letter">
+                  <span class="home-text44">P</span>
+                </div>
+                <div data-letter="q" class="letter">
+                  <span class="home-text45">Q</span>
+                </div>
+                <div data-letter="r" class="letter">
+                  <span class="home-text46">R</span>
+                </div>
+                <div data-letter="s" class="letter">
+                  <span class="home-text47">S</span>
+                </div>
+                <div data-letter="t" class="letter">
+                  <span class="home-text48">T</span>
+                </div>
+                <div data-letter="u" class="letter">
+                  <span class="home-text49">U</span>
+                </div>
+                <div data-letter="v" class="letter">
+                  <span class="home-text50">V</span>
+                </div>
+                <div data-letter="w" class="letter">
+                  <span class="home-text51">W</span>
+                </div>
+                <div data-letter="x" class="letter">
+                  <span class="home-text52">X</span>
+                </div>
+                <div data-letter="y" class="letter">
+                  <span class="home-text53">Y</span>
+                </div>
+                <div data-letter="z" class="letter">
+                  <span class="home-text54">Z</span>
+                </div>
+              </div>
+              <p class="home-text55">
+                You don’t know it’s name? Check out symptom checker below
+              </p>
+              <div data-teleport="results" class="home-results">
+                <span class="home-heading15">Results:</span>
+                <div data-results="letters" class="home-list"></div>
+              </div>
+            </div>
+            <div class="home-type-two">
+              <div class="home-heading16">
+                <h3 class="home-text56">Symptom checker</h3>
+                <p class="home-text57">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+              </div>
+              <div class="home-symptoms">
+                <div class="home-row">
+                  <div class="symptom">
+                    <span class="home-text58">Abdominal pain</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text59">Chest pain</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text60">Constipation</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text61">Cough</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text62">Breath difficulty</span>
+                  </div>
+                </div>
+                <div class="home-row1">
+                  <div class="symptom">
+                    <span class="home-text63">Red eye</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text64">Foot pain</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text65">Foot swelling</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text66">Headache</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text67">Heart palpitation</span>
+                  </div>
+                </div>
+                <div class="home-row2">
+                  <div class="symptom">
+                    <span class="home-text68">Knee pain</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text69">Hip pain</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text70">Low back pain</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text71">Nasal congestion</span>
+                  </div>
+                  <div class="symptom">
+                    <span class="home-text72">Neck pain</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="book" class="home-book5">
+          <div class="home-heading17">
+            <h2 class="home-text73">Book an appointment</h2>
+            <p class="home-text74">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="home-form">
+            <div class="home-types1">
+              <div class="book-type">
+                <span class="home-text75">In person appointment</span>
+              </div>
+              <div class="book-type">
+                <span class="home-text76">Virtual appointment</span>
+              </div>
+            </div>
+            <div class="home-inputs">
+              <input
+                type="text"
+                placeholder="Name"
+                autocomplete="name"
+                class="input book-input"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                autocomplete="email"
+                class="input book-input"
+              />
+              <input
+                type="tel"
+                placeholder="Phone"
+                autocomplete="tel"
+                class="input book-input"
+              />
+              <div class="home-date">
+                <input
+                  type="date"
+                  placeholder="Date"
+                  class="input book-input"
+                />
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/calendar-2.svg"
+                  class="home-image18"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Practice"
+                class="input book-input"
+              />
+              <div class="home-lower">
+                <p class="home-text77">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+                <div class="home-button">
+                  <button class="home-book6 button button-main">
+                    <span>Book</span>
+                  </button>
+                  <p class="home-text79">
+                    <span>Lorem ipsum dolor sit amet, consectetur</span>
+                    <span class="home-text81">adipiscing elit</span>
+                    <span>, sed do eiusmod tempor</span>
+                    <span class="home-text83">incididunt</span>
+                    <span>.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-meet">
+          <div class="home-heading18">
+            <h2 class="home-text85">Meet our doctors</h2>
+            <p class="home-text86">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="home-list1">
+            <div class="home-controls">
+              <img
+                alt="image"
+                src="static/public/playground_assets/circle-arrow.svg"
+                data-doctors="previous"
+                class="arrow"
+              />
+              <img
+                alt="image"
+                src="static/public/playground_assets/circle-arrow.svg"
+                data-doctors="next"
+                class="home-forward arrow"
+              />
+            </div>
+            <div data-teleport="doctors" class="home-doctors">
+              <div class="doctor-doctor">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/doctor-1-300w.png"
+                  class="doctor-image"
+                />
+                <div class="doctor-heading">
+                  <h2 class="doctor-text"><span>Dr. Audrey Smith</span></h2>
+                  <p class="doctor-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt.
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="doctor-doctor">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/doctor-2-300w.png"
+                  class="doctor-image"
+                />
+                <div class="doctor-heading">
+                  <h2 class="doctor-text"><span>Dr. Audrey Smith</span></h2>
+                  <p class="doctor-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt.
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="doctor-doctor">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/doctor-3-300w.png"
+                  class="doctor-image"
+                />
+                <div class="doctor-heading">
+                  <h2 class="doctor-text"><span>Dr. Audrey Smith</span></h2>
+                  <p class="doctor-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt.
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="doctor-doctor">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/doctor-4-300w.png"
+                  class="doctor-image"
+                />
+                <div class="doctor-heading">
+                  <h2 class="doctor-text"><span>Dr. Audrey Smith</span></h2>
+                  <p class="doctor-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-search1">
+            <input
+              type="text"
+              placeholder="Search by name"
+              class="home-textinput5 input book-input"
+            />
+            <button class="button button-main home-book7">
+              <span>Search doctor</span>
+            </button>
+          </div>
+        </section>
+        <section class="home-news">
+          <div class="home-heading19">
+            <h2 class="home-text88">Read our latest news</h2>
+            <p class="home-text89">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="home-list2">
+            <div class="home-item">
+              <div class="home-image19">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/news-logo-1500w.png"
+                  class="home-image20"
+                />
+              </div>
+              <div class="home-content09">
+                <div class="home-details">
+                  <span class="home-date1">November 23, 2022</span>
+                  <p class="home-quick-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="read-more">
+                  <span class="home-text90">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow.svg"
+                    class="home-image21"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="home-item1">
+              <div class="home-image22">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/news-1-1500w.png"
+                  class="home-image23"
+                />
+              </div>
+              <div class="home-content10">
+                <div class="home-details1">
+                  <span class="home-date2">November 23, 2022</span>
+                  <p class="home-quick-description1">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <div class="read-more">
+                  <span class="home-text91">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image24"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="home-item2">
+              <div class="home-image25">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/news-2-1500w.png"
+                  class="home-image26"
+                />
+              </div>
+              <div class="home-content11">
+                <div class="home-details2">
+                  <span class="home-date3">November 23, 2022</span>
+                  <p class="home-quick-description2">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore.
+                  </p>
+                </div>
+                <div class="read-more">
+                  <span class="home-text92">Read more</span>
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/arrow-2.svg"
+                    class="home-image27"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-download">
+          <div class="home-main1">
+            <img
+              alt="image"
+              src="static/public/playground_assets/phone-1500w.png"
+              class="home-image28"
+            />
+            <div class="home-content12">
+              <h2 class="home-text93">
+                Download our mobile app and book your next appointment
+              </h2>
+              <div class="home-buttons">
+                <button class="home-i-os button button-main">
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/apple.svg"
+                    class="home-image29"
+                  />
+                  <span>Download for iOS</span>
+                </button>
+                <button class="button button-main home-android">
+                  <img
+                    alt="image"
+                    src="static/public/playground_assets/android.svg"
+                    class="home-image30"
+                  />
+                  <span>Download for Android</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-footer">
+          <div class="home-left1">
+            <div class="home-brand">
+              <img
+                alt="image"
+                src="static/public/playground_assets/logo-2.svg"
+                class="home-image31"
+              />
+              <p class="home-text96">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+            <div class="home-socials">
+              <div class="social">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/insider.svg"
+                  class="home-image32"
+                />
+              </div>
+              <div class="social">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/instagram.svg"
+                  class="home-image33"
+                />
+              </div>
+              <div class="social">
+                <img
+                  alt="image"
+                  src="static/public/playground_assets/twitter.svg"
+                  class="home-image34"
+                />
+              </div>
+            </div>
+            <div class="home-legal">
+              <span class="home-copyright">
+                © 2022 finbest. All Rights Reserved.
+              </span>
+              <span class="legal-link">Privacy Policy</span>
+              <span class="legal-link">Terms of Use</span>
+            </div>
+          </div>
+          <div class="home-right1">
+            <div class="home-list3">
+              <span class="home-header16">Menu</span>
+              <div class="home-links1">
+                <span class="home-link04">Home</span>
+                <span class="home-link05">About</span>
+                <span class="home-link06">Services</span>
+                <span class="home-link07">Blog</span>
+                <span class="home-link08">Support</span>
+              </div>
+            </div>
+            <div class="home-list4">
+              <span class="home-header17">Resources</span>
+              <div class="home-links2">
+                <span class="home-link09">Test Results</span>
+                <span class="home-link10">Patients</span>
+                <span class="home-link11">Doctors</span>
+                <span class="home-link12">Health</span>
+              </div>
+            </div>
+            <div class="home-list5">
+              <span class="home-header18">Contact</span>
+              <div class="home-links3">
+                <span class="home-link13">
+                  24 Street Name, City FI 01234, RO
+                </span>
+                <a
+                  href="mailto:contact@template.new?subject=Main"
+                  class="home-link14"
+                >
+                  contact@template.new
+                </a>
+                <a href="tel:(004) 234 - 5678" class="home-link15">
+                  (004) 234 - 5678
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home-legal1">
+            <div class="home-row3">
+              <span class="legal-link">Privacy Policy</span>
+              <span class="legal-link">Terms of Use</span>
+            </div>
+            <span class="home-copyright5">
+              © 2022 finbest. All Rights Reserved.
+            </span>
+          </div>
+        </div>
+        <div>
+          <dangerous-html
+            html="<script>
+const modalOpen = document.querySelectorAll('[data-open]');
+const modalClose = document.querySelectorAll('[data-close]');
+
+modalOpen.forEach(button => {
+    button.addEventListener('click', event => {
+        const modal = document.querySelector(`[data-modal='${event.target.dataset.open}']`);
+        modal.style.display = 'flex';
+    });
+});
+
+modalClose.forEach(button => {
+    button.addEventListener('click', event => {
+        const modal = document.querySelector(`[data-modal='${event.target.dataset.close}']`);
+        modal.style.display = 'none';
+    });
+});
+</script>
+"
+          ></dangerous-html>
+        </div>
+        <div>
+          <dangerous-html
+            html="<script>
+const dataLetters = document.querySelectorAll('[data-letter]');
+let activeLetters = [];
+const maxResults = 6;
+
+dataLetters.forEach(letter => {
+  letter.addEventListener('click', function() {
+    if (this.classList.contains('letter-active')) {
+      this.classList.remove('letter-active');
+      activeLetters = activeLetters.filter(a => a !== this.dataset.letter);
+    } else {
+      this.classList.add('letter-active');
+      activeLetters.push(this.dataset.letter);
+    }
+    if (activeLetters.length == 0) {
+      document.querySelector('[data-teleport='results']').style.display = 'none';
+      return;
+    }
+    showResults();
+  });
+});
+
+const showResults = () => {
+  fetch('https://raw.githubusercontent.com/Shivanshu-Gupta/web-scrapers/master/medical_ner/medicinenet-diseases.json')
+    .then(response => response.json())
+    .then(data => {
+      const filteredData = data.filter(item => {
+        const firstLetter = item.disease.charAt(0).toLowerCase();
+        if (activeLetters.includes(firstLetter)) {
+          return true;
+        }
+        return false;
+      });
+
+      document.querySelector('[data-teleport='results']').style.display = 'flex';
+      const resultsContainer = document.querySelector('[data-results='letters']');
+      resultsContainer.innerHTML = '';
+
+      let counter = 0;
+      const diseaseGroups = {};
+      const totalActiveLetters = activeLetters.length;
+
+      filteredData.forEach(disease => {
+        const firstLetter = disease.disease[0].toLowerCase();
+        if (diseaseGroups[firstLetter]) {
+          diseaseGroups[firstLetter].push(disease);
+        } else {
+          diseaseGroups[firstLetter] = [disease];
+        }
+      });
+
+      Object.keys(diseaseGroups).sort().forEach((firstLetter, index) => {
+        const diseasesForThisLetter = diseaseGroups[firstLetter];
+        const diseasesToShow = diseasesForThisLetter.slice(0, Math.ceil(maxResults / totalActiveLetters));
+
+        diseasesToShow.forEach(disease => {
+          const resultContainer = document.createElement('div');
+          resultContainer.classList.add('search-result');
+          resultContainer.classList.add('invisible');
+          resultContainer.style.animationDelay = `${counter * 0.25}s`;
+
+          const resultText = document.createElement('span');
+          resultText.classList.add('result-text');
+          resultText.textContent = disease.disease;
+
+          resultContainer.appendChild(resultText);
+          resultsContainer.appendChild(resultContainer);
+          counter++;
+
+          if (counter === maxResults) {
+            const moreContainer = document.createElement('div');
+            moreContainer.classList.add('search-result');
+            moreContainer.classList.add('more-results');
+
+            const moreText = document.createElement('span');
+            moreText.classList.add('result-text');
+            moreText.textContent = 'More';
+
+            moreContainer.appendChild(moreText);
+            resultsContainer.appendChild(moreContainer);
+            addedMoreContainer = true;
+            return;
+          }
+        });
+      });
+    });
+};
+</script>
+"
+          ></dangerous-html>
+        </div>
+        <div>
+          <dangerous-html
+            html="<script>
+function scroll(direction) {
+  const doctorsDiv = document.querySelector('[data-teleport='doctors']');
+  const scrollAmount = 300;
+  if (direction === 'previous') {
+    doctorsDiv.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  } else if (direction === 'next') {
+    doctorsDiv.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+}
+
+const buttons = document.querySelectorAll('[data-doctors]');
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const direction = button.dataset.doctors;
+    scroll(direction);
+  });
+});
+</script>"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

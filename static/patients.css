@@ -1,0 +1,555 @@
+.testimonial-card1-testimonial-card {
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  background: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.testimonial-card1-icon {
+  width: var(--dl-size-size-small);
+  height: auto;
+}
+.testimonial-card1-testimonial {
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.testimonial-card1-text {
+  color: var(--dl-color-gray-500);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.testimonial-card1-text1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.testimonial-card1-text2 {
+  color: var(--dl-color-gray-500);
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-unit);
+  text-transform: uppercase;
+}
+.testimonial-card1-image {
+  width: var(--dl-size-size-medium);
+  height: var(--dl-size-size-medium);
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
+}
+
+
+@media(max-width: 991px) {
+  .testimonial-card1-text2 {
+    align-self: center;
+  }
+}
+@media(max-width: 767px) {
+  .testimonial-card1-testimonial-card {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .testimonial-card1-testimonial-card {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .testimonial-card1-text {
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .testimonial-card1-text1 {
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .testimonial-card1-text2 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+
+.patients-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.patients-navbar {
+  width: auto;
+  display: flex;
+  z-index: 100;
+  max-width: 1440px;
+  min-width: 100%;
+  align-items: center;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+  justify-content: space-between;
+}
+.patients-left {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.patients-logo {
+  width: 165px;
+  object-fit: cover;
+}
+.patients-links {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.patients-link {
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+.patients-link:hover {
+  opacity: 0.5;
+}
+.patients-link1 {
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+.patients-link1:hover {
+  opacity: 0.5;
+}
+.patients-link2 {
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  line-height: 24px;
+}
+.patients-link2:hover {
+  opacity: 0.5;
+}
+.patients-link3 {
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+.patients-link3:hover {
+  opacity: 0.5;
+}
+.patients-right {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.patients-phone {
+  gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+.patients-image {
+  width: 18px;
+  object-fit: cover;
+}
+.patients-text {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.patients-book {
+  text-decoration: none;
+}
+.patients-icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.patients-text01 {
+  font-family: Inter;
+}
+.patients-burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.patients-icon02 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.patients-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 1000;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.patients-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.patients-container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.patients-image1 {
+  height: 2rem;
+}
+.patients-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.patients-icon04 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.patients-nav1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.patients-text04 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.patients-text05 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.patients-text06 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.patients-text07 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.patients-book1 {
+  text-decoration: none;
+}
+.patients-image2 {
+  width: 18px;
+  object-fit: cover;
+}
+.patients-text08 {
+  font-family: Inter;
+}
+.patients-testimonial {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #232323;
+}
+.patients-container2 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.patients-text09 {
+  color: var(--dl-color-gray-white);
+}
+.patients-search {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 427px;
+  display: flex;
+  max-width: 570px;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: center;
+}
+.patients-textinput {
+  flex: 1;
+  color: #ffffff;
+  height: 100%;
+  border-color: #cdd2d8;
+}
+.patients-container3 {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-space-space-twounits);
+  margin-top: var(--dl-space-space-twounits);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.patients-testimonial-card {
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  background: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.patients-icon06 {
+  width: var(--dl-size-size-small);
+  height: auto;
+}
+.patients-testimonial1 {
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.patients-text13 {
+  color: var(--dl-color-gray-500);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.patients-text14 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.patients-text15 {
+  color: var(--dl-color-gray-500);
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-unit);
+  text-transform: uppercase;
+}
+.patients-image3 {
+  width: var(--dl-size-size-medium);
+  height: var(--dl-size-size-medium);
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
+}
+.patients-stats {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: var(--dl-size-size-maxwidth);
+  min-width: 100%;
+  justify-content: center;
+}
+.patients-stat {
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  align-items: center;
+  flex-direction: column;
+}
+.patients-icon08 {
+  fill: var(--dl-color-gray-700);
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+}
+.patients-text16 {
+  font-size: 1.15rem;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+}
+.patients-text17 {
+  color: var(--dl-color-gray-700);
+  font-size: 0.75rem;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+}
+.patients-text18 {
+  font-size: 3rem;
+  margin-top: var(--dl-space-space-halfunit);
+  font-weight: 300;
+}
+.patients-stat1 {
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  align-items: center;
+  flex-direction: column;
+}
+.patients-icon11 {
+  fill: var(--dl-color-gray-700);
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+}
+.patients-text19 {
+  font-size: 1.15rem;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+}
+.patients-text20 {
+  color: var(--dl-color-gray-700);
+  font-size: 0.75rem;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+}
+.patients-text21 {
+  font-size: 3rem;
+  margin-top: var(--dl-space-space-halfunit);
+  font-weight: 300;
+}
+.patients-stat2 {
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  align-items: center;
+  flex-direction: column;
+}
+.patients-icon13 {
+  fill: var(--dl-color-gray-700);
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+}
+.patients-text23 {
+  font-size: 1.15rem;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+}
+.patients-text24 {
+  color: var(--dl-color-gray-700);
+  font-size: 0.75rem;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+}
+.patients-text25 {
+  font-size: 3rem;
+  margin-top: var(--dl-space-space-halfunit);
+  font-weight: 300;
+}
+@media(max-width: 991px) {
+  .patients-navbar {
+    z-index: 1000;
+  }
+  .patients-links {
+    display: none;
+  }
+  .patients-right {
+    display: none;
+  }
+  .patients-burger-menu {
+    display: flex;
+    padding: var(--dl-space-space-unit);
+    border-radius: var(--dl-radius-radius-round);
+    background-color: #2461FF;
+  }
+  .patients-icon02 {
+    fill: white;
+  }
+  .patients-text09 {
+    text-align: center;
+  }
+  .patients-search {
+    gap: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-fiveunits);
+    flex-direction: column;
+  }
+  .patients-book2 {
+    width: 100%;
+  }
+  .patients-container3 {
+    grid-template-columns: 1fr;
+  }
+  .patients-text15 {
+    align-self: center;
+  }
+}
+@media(max-width: 767px) {
+  .patients-navbar {
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .patients-burger-menu {
+    display: flex;
+  }
+  .patients-container2 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .patients-search {
+    padding-right: 0px;
+  }
+  .patients-testimonial-card {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .patients-stats {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .patients-stat {
+    padding: var(--dl-space-space-unit);
+  }
+  .patients-text16 {
+    text-align: center;
+  }
+  .patients-stat1 {
+    padding: var(--dl-space-space-unit);
+  }
+  .patients-text19 {
+    text-align: center;
+  }
+  .patients-stat2 {
+    padding: var(--dl-space-space-unit);
+  }
+  .patients-text23 {
+    text-align: center;
+  }
+}
+@media(max-width: 479px) {
+  .patients-navbar {
+    padding: var(--dl-space-space-unit);
+  }
+  .patients-mobile-menu {
+    padding: 16px;
+  }
+  .patients-container2 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .patients-testimonial-card {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .patients-text13 {
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .patients-text14 {
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .patients-text15 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .patients-stats {
+    align-items: center;
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

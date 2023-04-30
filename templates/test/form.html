@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Flask Form</title>
+        <style>
+            /* Add some padding and margin to the page */
+            body {
+                padding: 20px;
+                margin: 20px;
+            }
+            
+            /* Center the form on the page */
+            form {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            /* Style the form inputs */
+            input[type="number"], input[type="text"] {
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+                border: none;
+                border: 1px solid #ccc;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                width: 50%;
+                max-width: 300px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+            
+            /* Style the form submit button */
+            input[type="submit"] {
+                padding: 10px 20px;
+                margin: 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: #4CAF50;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            
+            /* Add some margin to the column name inputs */
+            .col-name {
+                margin-top: 20px;
+            }
+            
+            /* Style the error message */
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+<body>
+	<form method="POST">
+		<label for="num_rows">Number of Rows:</label>
+		<input type="number" id="num_rows" name="num_rows" value="5">
+		<label for="num_cols">Number of Columns:</label>
+		<input type="number" id="num_cols" name="num_cols" value="3">
+		<br>
+		<label for="col_names">Column Names:</label>
+		<table>
+			<thead>
+				<tr>
+					{% for i in range(num_cols) %}
+						<th><input type="text" name="col_name" placeholder="Column {{ i+1 }}" value="{{col_names[i]}}"></th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in range(num_rows) %}
+					<tr>
+						{% for j in range(num_cols) %}
+							<td><input type="text" name="cell_{{ i }}_{{ j }}"></td>
+						{% endfor %}
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
